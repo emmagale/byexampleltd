@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | By E.G. Ltd</title>
+  <meta name="description" content="Contact By E.G. Ltd about digital health, cyber security, data protection, information governance and programme delivery support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">E.G.</span>
+      <span class="brand-name">By E.G. Ltd</span>
+    </a>
+    <button class="menu-button" aria-label="Open navigation">☰</button>
+    <nav class="nav">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#health">Health & Care</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#credentials">Credentials</a>
+      <a href="contact.html" class="nav-cta" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="contact-hero">
+    <div class="container contact-hero-grid">
+      <div>
+        <span class="eyebrow">Contact By E.G. Ltd</span>
+        <h1>Start a conversation.</h1>
+        <p class="lead">Tell us a little about what you are working on and where you need support. We will come back to you as soon as possible.</p>
+      </div>
+      <div class="contact-intro">
+        <strong>How we can help</strong>
+        <p>Digital health, EPR and clinical systems, cyber assurance, data protection and IG, digital transformation, programme delivery and independent advisory support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="container contact-layout">
+      <div>
+        <span class="eyebrow dark">Your enquiry</span>
+        <h2>What can we help with?</h2>
+        <p>Complete the form and your enquiry will be sent securely through the website. Your email address is not displayed publicly.</p>
+      </div>
+
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden-field"><label>Do not fill this in: <input name="bot-field"></label></p>
+
+        <div class="form-grid">
+          <label>
+            <span>Name *</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Organisation</span>
+            <input type="text" name="organisation" autocomplete="organization">
+          </label>
+        </div>
+
+        <div class="form-grid">
+          <label>
+            <span>Email address *</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Telephone</span>
+            <input type="tel" name="telephone" autocomplete="tel">
+          </label>
+        </div>
+
+        <label>
+          <span>What would you like to discuss?</span>
+          <select name="enquiry-type">
+            <option value="">Please select</option>
+            <option>Digital strategy & transformation</option>
+            <option>Programme & EPR delivery</option>
+            <option>Cyber security & assurance</option>
+            <option>Data protection & information governance</option>
+            <option>Clinical & patient systems</option>
+            <option>Independent advisory support</option>
+            <option>Something else</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Message *</span>
+          <textarea name="message" rows="8" required placeholder="Tell us briefly what you need help with..."></textarea>
+        </label>
+
+        <p class="form-privacy">The information you provide will only be used to respond to your enquiry and manage any subsequent correspondence.</p>
+        <button class="button form-button" type="submit">Send enquiry</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>By E.G. Ltd</strong><p>Digital Health • Cyber Security • Data Protection</p></div>
+    <div><p>G‑Cloud 15 supplier</p><p>United Kingdom</p></div>
+    <div><p>© <span id="year"></span> By E.G. Ltd</p></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
